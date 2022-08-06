@@ -18,7 +18,7 @@ public record PurchaseTransactionController(PurchaseTransactionService purchaseT
     @ResponseStatus(HttpStatus.OK)
     public List<PurchaseTransactionResponse> getAllCustomers(
             @RequestParam(required = false) String paymentType,
-            @RequestParam(required = false, defaultValue = "#{T(com.polovyi.ivan.tutorials.enm.PurchaseTransactionSortEnum).ASC_CREATED_AT}")
+            @RequestParam(required = false, defaultValue = "ASC_CREATED_AT")
                     PurchaseTransactionSortEnum sortEnum) {
         return purchaseTransactionService.fetchAll(paymentType, sortEnum);
     }
