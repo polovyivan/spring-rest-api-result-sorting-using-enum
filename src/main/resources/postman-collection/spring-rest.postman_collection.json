@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "9297a3ca-51aa-4378-9673-b5183b16bfad",
+		"name": "spring-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/purchase-transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/purchase-transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"purchase-transactions"
+					],
+					"query": [
+						{
+							"key": "paymentType",
+							"value": "AMERICAN_EXPRESS",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "ASC_CREATED_AT",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "DESC_CREATED_AT",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "ASC_PAYMENT_TYPE",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "DESC_PAYMENT_TYPE",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "ASC_AMOUNT",
+							"disabled": true
+						},
+						{
+							"key": "sortEnum",
+							"value": "DESC_AMOUNT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
